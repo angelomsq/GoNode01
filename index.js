@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.render('main');
 });
 
